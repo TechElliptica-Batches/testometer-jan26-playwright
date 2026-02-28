@@ -11,7 +11,7 @@ bitbucket
 azure devops
 
 
-working Repository (add) staging area (commit) local repository(virtual)   -    Remote Repository
+working Repository (add) staging area -  (commit) - local repository(virtual)  (push)  Remote Repository
 
 
 Remote Repository
@@ -23,5 +23,8 @@ abcd
 
 
 git add = working repo -> staging area
+git commit -m "msg" = staging area -> local repo
+git push = local repo to remote repo
 
 
+branching process
