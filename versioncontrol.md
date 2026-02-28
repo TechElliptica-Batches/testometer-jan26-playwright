@@ -11,9 +11,17 @@ bitbucket
 azure devops
 
 
-working Repository                  Remote Repository
+working Repository (add) staging area (commit) local repository(virtual)   -    Remote Repository
 
 
 Remote Repository
 
 github desktop
+
+
+abcd
+
+
+git add = working repo -> staging area
+
+
