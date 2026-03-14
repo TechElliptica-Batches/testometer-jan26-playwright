@@ -18,6 +18,16 @@ class LoginPage{
         await this.loginbtn.click();
     }
 
+    async enterUsername(username){
+        await this.username.fill(username);
+    }
+    async enterPassword(password){
+         await this.password.fill(password);
+    }
+    async clickLogin(){
+        await this.loginbtn.click();
+    }
+
     async validateErrorMsg(expectedErrorMsg){
         expect(this.errorMsg).toHaveText(expectedErrorMsg);
     }

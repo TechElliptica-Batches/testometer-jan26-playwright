@@ -33,3 +33,9 @@ test("verify user able to see errormsg in case empty credentials", async({page})
 
 // Chrome = browser
 // tab = page
+
+// last phase 
+// framework process. typescript, bdd-cucumber, api testing
+
+
+// 8AM  
