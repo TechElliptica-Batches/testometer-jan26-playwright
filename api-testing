@@ -1,0 +1,53 @@
+API Testing 
+
+UI - Front end 
+
+Zomato 
+
+Restaunrant Process System - Java 
+Payment - Python
+Delivery - Map () - Google map - Golang
+
+API - Application Programming Interface
+
+Basic Component 
+
+1 - baseURL - where your api server is hosted
+
+2 - authentication (headers) - bearerToken, JWT, basic - username, password
+        Content-Type 
+
+3 - Method - GET (read or fetch) , POST (Create) , PUT (Update), PATCH (partial - update), DELETE (Delete)
+
+4 - Endpoint (Service)
+
+5 - Payload (Body) - Request-Body (JSON) , query param, path param 
+
+
+
+6 - Response 
+    a - Response Code - 200 - Success, 300 - Redirctional , 400 - Client , 500 - Server side
+    b - Response body - detail of your Response
+    c - Response Headers - header details of your response
+
+
+
+frontend - {username, emailid} asdjfadks@gmail.com
+component1 -> component2 -> component3 -> component4
+
+API testing
+
+Mock api 
+
+1 - third party api 
+2 - when any other componenet is not available (stubs and driver)
+
+payment - 
+channel - CC, DC, NB
+sanction - 
+fxshare - 
+
+google map 
+
+
+

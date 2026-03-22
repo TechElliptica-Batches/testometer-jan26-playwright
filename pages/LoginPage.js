@@ -5,11 +5,23 @@ class LoginPage{
     
     constructor(page){
         this.page = page;
-
-        this.username = page.getByPlaceholder("Username");
+        this.username = getElement(["//input[@placeholder='Username']", "//input[@id='abcd']"]);
         this.password = page.getByPlaceholder("Password");
         this.loginbtn = page.locator('//*[@id="login-button"]');
         this.errorMsg = page.locator('//*[@id="login_button_container"]/div/form/div[3]/h3');
+    }
+
+    async getElement(arr){
+       let elm = null;
+        for(let i = 0 ; i < arr.length ; i++){
+            try{
+               elm = page.locator(arr[i]);
+                break;
+            }catch(error){
+                console.log("locator not found for "+arr[i]+ ". so searching for next lcaotor")
+            }
+        }
+        return elm;
     }
 
     async login(username, password){

@@ -1,0 +1,85 @@
+{
+  "project": {
+    "name": "Playwright Banking Automation Framework",
+    "type": "UI Automation Testing",
+    "domain": "Banking",
+    "architecture": "Page Object Model (POM)",
+    "language": "JavaScript (ES Modules)",
+    "runtime": "Node.js 20",
+    "framework": "Playwright 1.50"
+  },
+  "design_principles": [
+    "No hardcoded data",
+    "Environment-based configuration",
+    "Reusable components",
+    "Separation of concerns",
+    "Scalable for enterprise applications",
+    "Aligned with Spring Boot layered architecture"
+  ],
+  "folder_structure": {
+    "tests": "Test specifications",
+    "pages": "Page Object Models",
+    "fixtures": "Custom Playwright fixtures",
+    "utils": "Config, test data, helpers",
+    "env": "Environment configuration files",
+    "config": "Playwright configuration"
+  },
+  "core_components": {
+    "BasePage": {
+      "responsibility": "Reusable browser actions (click, fill, navigate)"
+    },
+    "LoginPage": {
+      "responsibility": "Encapsulates login functionality and locators"
+    },
+    "Fixtures": {
+      "responsibility": "Dependency injection for pages"
+    },
+    "Config": {
+      "responsibility": "Loads environment variables dynamically"
+    }
+  },
+  "coding_guidelines": {
+    "locators": "Keep private inside page classes",
+    "methods": "Expose only business actions",
+    "data": "Use config or testData files",
+    "tests": "Should not contain locator logic",
+    "imports": "Use ES module syntax"
+  },
+  "test_strategy": {
+    "type": "UI automation with future API integration",
+    "layers": [
+      "UI Layer (Playwright)",
+      "Service Layer (Spring Boot backend - future API validation)",
+      "Config Layer (env-based execution)"
+    ]
+  },
+  "environment": {
+    "config_file": "utils/config.js",
+    "env_files": ["env/dev.env", "env/qa.env"],
+    "variables": ["BASE_URL", "USERNAME", "PASSWORD"]
+  },
+  "execution": {
+    "command": "npx playwright test",
+    "env_command": "ENV=qa npx playwright test"
+  },
+  "future_scope": [
+    "API + UI hybrid framework",
+    "Token-based authentication",
+    "CI/CD integration",
+    "Reporting (Allure)",
+    "Kafka event validation",
+    "Performance testing integration"
+  ],
+  "author_context": {
+    "role": "Automation Architect",
+    "experience": "14+ years QA Automation",
+    "tech_stack": [
+      "Java",
+      "Selenium",
+      "Playwright",
+      "Spring Boot",
+      "Kafka",
+      "CI/CD"
+    ]
+  }
+}
